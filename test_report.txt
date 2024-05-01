@@ -18,11 +18,8 @@ FAIL src/App.test.tsx
           [36m<div[39m
             [33mclass[39m=[32m"HomePage"[39m
           [36m>[39m
-            [36m<h1>[39m
-              [0mCareer Quiz[0m
-            [36m</h1>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"content"[39m
+              [33mclass[39m=[32m"quizzes"[39m
             [36m>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"question"[39m
@@ -48,7 +45,7 @@ FAIL src/App.test.tsx
                   [0mDetailed Questions[0m
                 [36m</h2>[39m
                 [36m<p>[39m
-                  [0mLooking for a comprehensive assessment of your career interests and strengths? Our detailed career quiz dives deep into your personality. preferences, and skills to provide recommendations for your professional journey. Click below to explore a variety of career options and gain valuable advice to make decisions about your future.[0m
+                  [0mLooking for a comprehensive assessment of your career interests and strengths? Our detailed career quiz dives deep into your personality, preferences, and skills to provide recommendations for your professional journey. Click below to explore a variety of career options and gain valuable advice to make decisions about your future.[0m
                 [36m</p>[39m
                 [36m<a[39m
                   [33mhref[39m=[32m"/detailed-questions"[39m
@@ -60,6 +57,35 @@ FAIL src/App.test.tsx
                   [36m</button>[39m
                 [36m</a>[39m
               [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"login-section"[39m
+            [36m>[39m
+              [36m<h2>[39m
+                [0mLogin[0m
+              [36m</h2>[39m
+              [36m<form[39m
+                [33mclass[39m=[32m"login-form"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mplaceholder[39m=[32m"Email"[39m
+                  [33mtype[39m=[32m"email"[39m
+                [36m/>[39m
+                [36m<input[39m
+                  [33mplaceholder[39m=[32m"Password"[39m
+                  [33mtype[39m=[32m"password"[39m
+                [36m/>[39m
+                [36m<button[39m
+                  [33mtype[39m=[32m"submit"[39m
+                [36m>[39m
+                  [0mLogin[0m
+                [36m</button>[39m
+              [36m</form>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"create-account-button"[39m
+              [36m>[39m
+                [0mCreate Account[0m
+              [36m</button>[39m
             [36m</div>[39m
           [36m</div>[39m
           [36m<form[39m
@@ -112,18 +138,19 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   22.22 |     7.14 |      10 |   23.07 |                   
+All files              |   20.96 |     6.25 |    9.52 |   21.66 |                   
+ App.tsx               |   66.66 |       50 |      50 |   66.66 | 19,102-108        
  BasicQuestions.tsx    |   23.07 |        0 |       0 |      25 | 29-63             
- DetailedQuestions.tsx |    7.69 |        0 |       0 |    8.33 | 6-118             
- HomePage.tsx          |   66.66 |       50 |      50 |   66.66 | 18,60-66          
+ DetailedQuestions.tsx |    5.26 |        0 |       0 |    5.55 | 8-133             
  Navigation.tsx        |       0 |        0 |       0 |       0 | 5-11              
+ Report.tsx            |      50 |      100 |       0 |      50 | 5                 
  index.tsx             |       0 |      100 |     100 |       0 | 7-19              
  reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
 -----------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.087 s
+Time:        3.152 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
