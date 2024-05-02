@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (52 ms)
+  ✕ renders learn react link (50 ms)
 
   ● renders learn react link
 
@@ -31,7 +31,7 @@ FAIL src/App.test.tsx
                   [0mAre you unsure about your career path? Click below to take our quick career quiz to gain insight into your professional goals and strength. Discover potential career paths that align with your interest, skills, and values.[0m
                 [36m</p>[39m
                 [36m<a[39m
-                  [33mhref[39m=[32m"/basic-questions"[39m
+                  [33mhref[39m=[32m"#/basic-questions"[39m
                 [36m>[39m
                   [36m<button>[39m
                     [0mStart Basic Quiz[0m
@@ -48,7 +48,7 @@ FAIL src/App.test.tsx
                   [0mLooking for a comprehensive assessment of your career interests and strengths? Our detailed career quiz dives deep into your personality, preferences, and skills to provide recommendations for your professional journey. Click below to explore a variety of career options and gain valuable advice to make decisions about your future.[0m
                 [36m</p>[39m
                 [36m<a[39m
-                  [33mhref[39m=[32m"/detailed-questions"[39m
+                  [33mhref[39m=[32m"#/detailed-questions"[39m
                 [36m>[39m
                   [36m<button[39m
                     [33mclass[39m=[32m"detailed-quiz"[39m
@@ -150,7 +150,7 @@ All files              |   20.96 |     6.25 |    9.52 |   21.66 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.152 s
+Time:        3.149 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
