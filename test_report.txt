@@ -61,6 +61,39 @@ FAIL src/App.test.tsx
                 [36m</a>[39m
               [36m</div>[39m
             [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"login-section"[39m
+            [36m>[39m
+              [36m<form[39m
+                [33mclass[39m=[32m"login-form"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mplaceholder[39m=[32m"Email"[39m
+                  [33mtype[39m=[32m"email"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+                [36m<input[39m
+                  [33mplaceholder[39m=[32m"Password"[39m
+                  [33mtype[39m=[32m"password"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"button-container"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"create-account-button"[39m
+                  [36m>[39m
+                    [0mNew Account[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"login-button"[39m
+                    [33mtype[39m=[32m"submit"[39m
+                  [36m>[39m
+                    [0mLogin[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</form>[39m
+            [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
         [36m<div[39m
@@ -112,23 +145,23 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   12.96 |     9.37 |    6.89 |   13.46 |                   
- App.tsx               |   66.66 |       50 |      50 |   66.66 | 19,103-109        
- BasicQuestions.tsx    |   23.07 |        0 |       0 |      25 | 29-63             
- ChatGPT.tsx           |    3.44 |    14.28 |       0 |     3.7 | 5-75              
- DetailedQuestions.tsx |       4 |        0 |       0 |    4.16 | 8-144             
- Navigation.tsx        |       0 |        0 |       0 |       0 | 5-11              
- Report.tsx            |    7.69 |        0 |       0 |    7.69 | 11-40             
- index.tsx             |       0 |      100 |     100 |       0 | 7-19              
- reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
------------------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s             
+-----------------------|---------|----------|---------|---------|-------------------------------
+All files              |   18.69 |    10.52 |    8.82 |   19.32 |                               
+ App.tsx               |   62.96 |       25 |   33.33 |   62.96 | 14,61-64,70,89-95,112-113,118 
+ BasicQuestions.tsx    |   23.07 |        0 |       0 |      25 | 29-63                         
+ ChatGPT.tsx           |    3.44 |    14.28 |       0 |     3.7 | 5-75                          
+ DetailedQuestions.tsx |       4 |        0 |       0 |    4.16 | 8-144                         
+ Navigation.tsx        |       0 |        0 |       0 |       0 | 5-11                          
+ Report.tsx            |    7.69 |        0 |       0 |    7.69 | 11-40                         
+ index.tsx             |       0 |      100 |     100 |       0 | 7-19                          
+ reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10                          
+-----------------------|---------|----------|---------|---------|-------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.19 s
+Time:        3.287 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
