@@ -5,7 +5,6 @@
 
 body {
   background-color: #242582;
-  /* background-image: url(https://images.pexels.com/photos/7894879/pexels-photo-7894879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
   background-image: url(https://img.freepik.com/premium-photo/pixel-art-desert-day-with-blue-sky_887552-25458.jpg);
   background-size: cover;
 }
@@ -17,8 +16,8 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25); /* Adjust the alpha value (last parameter) to control darkness */
-  z-index: -1; /* Ensure the overlay is behind other content */
+  background-color: rgba(0, 0, 0, 0.25); 
+  z-index: -1; 
 }
 
 
@@ -38,18 +37,12 @@ button:hover{
 }
 
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-/* title at the top of the page*/
 h1 {
   font-weight: bold;
   margin-bottom: 100px;
@@ -58,16 +51,13 @@ h1 {
   height: 50px;
 }
 
-/* detailed question title style & question title on homepage */
 h2 {
-  /* font-weight: bold; */
   font-size: 2em;
   text-shadow: 2px 2px 4px black;
   height: 50px;
   text-decoration: underline;
 }
 
-/* basic question title style */
 .question_two {
   display: flex;
   flex-direction: column;
@@ -76,7 +66,7 @@ h2 {
   font-size: 2em;
   text-shadow: 2px 2px 4px black;
   height: 50px;
-  margin-top: 50px; /* Adjust margin top as needed */
+  margin-top: 50px; 
 }
 
 .question-container {
@@ -88,7 +78,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px; /* Adjust margin top as needed */
+  margin-top: 50px; 
 
 }
 
@@ -136,34 +126,11 @@ h2 {
 }
 
 .option-label input[type="radio"] {
-  margin-right: 0px; /* Adjust spacing between radio button and option text */
+  margin-right: 0px; 
 }
 
 .option-selected {
   color: black;
-  font-weight: bold; /* Make the selected option bold */
+  font-weight: bold;
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(123, 255, 209);
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  } 
-} */

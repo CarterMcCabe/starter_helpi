@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { generateDetailed } from './ChatGPT';
 import { Link } from 'react-router-dom';
-import './Report.css'; // Import CSS for styling
+import './Report.css'; 
 
 interface ReportItem {
   title: string;
@@ -12,12 +12,11 @@ const Report: React.FC = () => {
   const [reportData, setReportData] = useState<ReportItem[]>([]);
 
   useEffect(() => {
-    // Fetch report data when the component mounts
     const fetchReportData = async () => {
       const detailedAnswers = ["Answer 1", "Answer 2", "Answer 3"]; 
 
       const detailedReport = await generateDetailed(detailedAnswers);
-      console.log("Detailed Report:", detailedReport); // Log the detailed report to see its structure
+      console.log("Detailed Report:", detailedReport);
       setReportData(detailedReport);
     };
 

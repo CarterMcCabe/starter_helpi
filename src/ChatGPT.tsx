@@ -33,7 +33,6 @@ export async function generateDetailed(detailedAnswers: string[]) {
   const result2 = result[1].split(":");
   const result3 = result[2].split(":");
 
-  // Generate Indeed URLs based on job titles
   const indeedUrls = result.map(title => `https://www.indeed.com/q-${title.replace(/\s+/g, '-')}-jobs.html`);
 
   return [

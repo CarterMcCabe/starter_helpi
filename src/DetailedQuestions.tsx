@@ -76,11 +76,10 @@ const DetailedQuestions: React.FC = () => {
         "Continuous learning and personal development in various fields"
       ]
     },
-    // Add more questions here
   ]);
 
   const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({});
-  const [detailedAnswers, setDetailedAnswers] = useState<string[]>([]); // State to store detailed answers
+  const [detailedAnswers, setDetailedAnswers] = useState<string[]>([]);
   const [allQuestionsAnswered, setAllQuestionsAnswered] = useState(false);
   const navigate = useNavigate();
 
@@ -91,14 +90,12 @@ const DetailedQuestions: React.FC = () => {
       [questionId]: option
     }));
 
-    // Store the selected option in the detailedAnswers array
     setDetailedAnswers(prevAnswers => {
       const updatedAnswers = [...prevAnswers];
-      updatedAnswers[questionId - 1] = option; // Question IDs start from 1, arrays start from 0
+      updatedAnswers[questionId - 1] = option;
       return updatedAnswers;
     });
 
-    // Check if all questions are answered
     const answeredQuestions = Object.keys(selectedOptions).length + 1;
     setAllQuestionsAnswered(answeredQuestions === questions.length);
   };

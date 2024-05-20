@@ -57,31 +57,25 @@ const LoginForm: React.FC = () => {
   const [password, setPassword] = useState<string>("");
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
 
-  // Handle form submission
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent default form submission
-    // Perform login validation (dummy validation for demonstration)
+    event.preventDefault(); 
     if (email && password) {
       setLoggedIn(true);
     }
   };
 
-  // Handle logout
   const handleLogout = () => {
     setLoggedIn(false);
-    // Clear user data from local storage or perform any other necessary logout tasks
   };
 
   return (
     <>
       {loggedIn ? (
-        // Display user email and logout link if logged in
         <div>
           <p>Logged in as: {email}</p>
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
-        // Display login form if not logged in
         <form className="login-form" onSubmit={handleSubmit}>
           <input
             type="email"
@@ -108,13 +102,11 @@ const LoginForm: React.FC = () => {
 function App() {
   const [key, setKey] = useState<string>(keyData);
 
-  // Function to handle API key submission
   const handleSubmit = () => {
     localStorage.setItem(saveKeyData, JSON.stringify(key));
     window.location.reload();
   };
 
-  // Function to handle API key change
   const changeKey = (event: React.ChangeEvent<HTMLInputElement>) => {
     setKey(event.target.value);
   };

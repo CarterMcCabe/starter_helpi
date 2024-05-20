@@ -36,11 +36,10 @@
     margin-top: 20px;
   }
   .selectedOption {
-    background-color: #f0f0f0; /* Change the background color to your desired highlight color */
+    background-color: #f0f0f0; 
   }
 
   h2 {
-  /* font-weight: bold; */
   font-size: 2em;
   text-shadow: 2px 2px 4px black;
   height: 50px;
@@ -53,5 +52,5 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* Ensure it's above other content */
+  z-index: 999;
 }

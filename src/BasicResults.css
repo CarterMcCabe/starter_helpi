@@ -1,10 +1,10 @@
 .container-wrapper {
     margin: 15px;
     text-align: center;
-    background-color: #8d8741a0; /* Semi-transparent dark yellow */
+    background-color: #8d8741a0; 
     padding: 30px;
     border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adjust box shadow as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
     width: 100%;
     display: inline-block;
 }

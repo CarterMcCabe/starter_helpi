@@ -16,7 +16,7 @@ const BasicResults: React.FC = () => {
             }
         }
         fetchReportData();
-    }, []); // Empty dependency array to ensure useEffect runs only once
+    }, []);
 
 
 
